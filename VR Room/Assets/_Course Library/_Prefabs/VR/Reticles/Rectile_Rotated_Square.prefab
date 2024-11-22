@@ -98,8 +98,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3521457681945940986, guid: 493691fe396bc5c40900e8a234c5c60e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6032644325669796032}
   m_SourcePrefab: {fileID: 100100000, guid: 493691fe396bc5c40900e8a234c5c60e, type: 3}
+--- !u!1 &2334425485627022430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3521457681945940986, guid: 493691fe396bc5c40900e8a234c5c60e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1205610680802054052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6032644325669796032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334425485627022430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 915fa35b5e538d846b8386f99fc4128d, type: 2}
 --- !u!4 &3111524658501551844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293456250089572672, guid: 493691fe396bc5c40900e8a234c5c60e,
