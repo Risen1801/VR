@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/PA_Pr\xFCfraum.unity"
     guid: ec0e8087a04465f488feaf6317f919ee
+  - enabled: 1
+    path: Assets/Scenes/PA_IntroDone.unity
+    guid: a3da5bf13ff31ee459b6df7872a04401
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
       type: 2}

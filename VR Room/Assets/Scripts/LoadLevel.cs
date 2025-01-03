@@ -17,6 +17,6 @@ public class LoadLevel : MonoBehaviour
 
     public void LoadIntro()
     {
-        SceneManager.LoadScene("PA_Intro");
+        SceneManager.LoadScene("PA_IntroDone");
     }
 }
