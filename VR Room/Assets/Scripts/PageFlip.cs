@@ -1,11 +1,11 @@
 using UnityEngine;
 
 /// <summary>
-/// Ermöglicht das Durschalten einer Liste von GameObjects (z.B. Dialogen)
+/// Ermöglicht das Durchschalten einer Liste von GameObjects (z.B. Dialogen)
 /// </summary>
 public class PageFlip : MonoBehaviour
 {
-    // Liste mit der Seiten
+    // Liste mit den Seiten
     public GameObject[] pages;
 
     // Soll das Menü beim Start geöffnet werden
@@ -17,21 +17,21 @@ public class PageFlip : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Sicherstellen das immer mit der ersten Seite gestartet wird
+        // Sicherstellen, dass immer mit der ersten Seite gestartet wird
         ShowPage(0);
 
         // Zum Start geöffnet?
-        if (!isOpenOnStart) 
+        if (!isOpenOnStart)
         {
             Close();
         }
     }
 
     /// <summary>
-    /// Zeige eine bestimmte "Seite" an 
+    /// Zeige eine bestimmte "Seite" an
     /// </summary>
-    /// <param name="pageIndex">Index beginnend bei 0 der zuöffnenden Seite.</param>
-    public void ShowPage(int pageIndex) 
+    /// <param name="pageIndex">Index beginnend bei 0 der zu öffnenden Seite.</param>
+    public void ShowPage(int pageIndex)
     {
         Close();
         pages[pageIndex]?.SetActive(true);
@@ -39,18 +39,27 @@ public class PageFlip : MonoBehaviour
     }
 
     /// <summary>
-    /// Zeige die nächste "Seite" an und beginne von vorne oder schließe alle "Seiten".
+    /// Zeige die nächste "Seite" an. Beginne von vorne, wenn das Ende erreicht ist.
     /// </summary>
     public void Next()
     {
-        // Bereits am Ende angekommen?
-        if (PageIndex >= pages.Length - 1)
-        {
-            return;
-        }
+        // Index erhöhen und zyklisch anpassen
+        PageIndex = (PageIndex + 1) % pages.Length;
 
-        // Index erhöhen
-        PageIndex++;
+        // Geöffnete Seite(n) schließen
+        Close();
+
+        // Neue Seite öffnen
+        pages[PageIndex].SetActive(true);
+    }
+
+    /// <summary>
+    /// Zeige die vorherige "Seite" an. Springe ans Ende, wenn der Anfang erreicht ist.
+    /// </summary>
+    public void Previous()
+    {
+        // Index verringern und zyklisch anpassen
+        PageIndex = (PageIndex - 1 + pages.Length) % pages.Length;
 
         // Geöffnete Seite(n) schließen
         Close();
@@ -62,12 +71,11 @@ public class PageFlip : MonoBehaviour
     /// <summary>
     /// Schließt alle "Seiten".
     /// </summary>
-    public void Close() 
+    public void Close()
     {
         for (int i = 0; i < pages.Length; i++)
         {
             pages[i].SetActive(false);
         }
     }
-
 }

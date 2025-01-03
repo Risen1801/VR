@@ -1804,7 +1804,6 @@ GameObject:
   - component: {fileID: 443823182}
   - component: {fileID: 443823181}
   - component: {fileID: 443823185}
-  - component: {fileID: 443823186}
   m_Layer: 0
   m_Name: CanvasTutorial
   m_TagString: Untagged
@@ -1938,26 +1937,6 @@ MonoBehaviour:
   - {fileID: 1180541994}
   - {fileID: 1214417640}
   - {fileID: 309766240}
-  isOpenOnStart: 1
---- !u!114 &443823186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443823179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d88f28e08476624ebba97adb224d8d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pages:
-  - {fileID: 388028392}
-  - {fileID: 309766240}
-  - {fileID: 1214417640}
-  - {fileID: 1180541994}
-  - {fileID: 1277598009}
-  - {fileID: 860030117}
   isOpenOnStart: 1
 --- !u!1 &491652338
 GameObject:
@@ -6710,9 +6689,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 443823186}
+      - m_Target: {fileID: 443823185}
         m_TargetAssemblyTypeName: PageFlip, Assembly-CSharp
-        m_MethodName: Next
+        m_MethodName: Previous
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
