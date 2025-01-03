@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Challenges/01_Architecture/Scenes/Architecture_Prototype_Broken.unity
-    guid: 15e24606183024cb792c3d70eb38662f
+    path: Assets/Scenes/PA_Intro.unity
+    guid: c1b29cb6c9d3a774fbea7f015eb226ae
+  - enabled: 1
+    path: "Assets/Scenes/PA_\xDCbungsraum.unity"
+    guid: 1ee10a423333711489f03ce1879ed97d
+  - enabled: 1
+    path: "Assets/Scenes/PA_Pr\xFCfraum.unity"
+    guid: ec0e8087a04465f488feaf6317f919ee
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
       type: 2}
