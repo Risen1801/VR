@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Floor
   - Sawblade
+  - Flansch
+  - Abdeckung
+  - Mutter
   layers:
   - Default
   - TransparentFX
