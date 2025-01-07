@@ -9,6 +9,7 @@ TagManager:
   - Flansch
   - Abdeckung
   - Mutter
+  - Hammer
   layers:
   - Default
   - TransparentFX
