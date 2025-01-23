@@ -8464,6 +8464,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 717990389}
     m_Modifications:
+    - target: {fileID: 215097467306343897, guid: dd8dcf674af319c4ab62810c0dca5cfc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1192407181920593449, guid: dd8dcf674af319c4ab62810c0dca5cfc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8514,10 +8519,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2717721658217250776, guid: dd8dcf674af319c4ab62810c0dca5cfc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767395208726247581, guid: dd8dcf674af319c4ab62810c0dca5cfc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902311399603649919, guid: dd8dcf674af319c4ab62810c0dca5cfc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5791349164880021001, guid: dd8dcf674af319c4ab62810c0dca5cfc,
         type: 3}
       propertyPath: m_Name
       value: GhostItems
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163874470516450608, guid: dd8dcf674af319c4ab62810c0dca5cfc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
