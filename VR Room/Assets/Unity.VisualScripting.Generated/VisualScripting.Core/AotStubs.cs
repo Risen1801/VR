@@ -1128,24 +1128,30 @@ namespace Unity.VisualScripting.Generated.Aot
 	// --------------- Plugin Stubs
 	// --------------- Asset Stubs
 	// UnityEngine.Mathf.PingPong
-	// UnityEngine.Transform.localScale
 	// UnityEngine.Time.time
+	// UnityEngine.Transform.localScale
 	// UnityEngine.GameObject.CompareTag
 	// UnityEngine.Transform.Rotate
 	// UnityEngine.MeshRenderer.material
-	// UnityEngine.Color..ctor
 	// UnityEngine.Color.a
+	// UnityEngine.Color.b
 	// UnityEngine.Material.color
 	// UnityEngine.Color.r
+	// UnityEngine.Color..ctor
 	// UnityEngine.Color.g
-	// UnityEngine.Color.b
+	// UnityEngine.RectTransform.sizeDelta
 	// UnityEngine.GameObject.SetActive
+	// TMPro.TextMeshProUGUI.text
+	// UnityEngine.UI.Image.color
+	// UnityEngine.UI.Image.sprite
+	// string.Format
 	// --------------- Scene Stubs
 	// UnityEngine.SphereCollider..ctor
 	// UnityEngine.GameObject..ctor
 	// --------------- Scene Stubs
 	// UnityEngine.BoxCollider..ctor
 	// --------------- Scene Stubs
+	// TMPro.TextMeshProUGUI..ctor
 	// --------------- Scene Stubs
 	[UnityEngine.Scripting.PreserveAttribute()]
 	public class AotStubs
@@ -14130,6 +14136,15 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.Invoke(default(object[]));
 		}
 		
+		// UnityEngine.Time.time
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Time_time()
+		{
+			float accessor = global::UnityEngine.Time.time;
+			global::Unity.VisualScripting.StaticPropertyAccessor<float> optimized = new global::Unity.VisualScripting.StaticPropertyAccessor<float>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(null);
+		}
+		
 		// UnityEngine.Transform.localScale
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void UnityEngine_Transform_localScale()
@@ -14140,15 +14155,6 @@ namespace Unity.VisualScripting.Generated.Aot
 			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Transform, UnityEngine.Vector3> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Transform, UnityEngine.Vector3>(default(global::System.Reflection.PropertyInfo));
 			optimized.GetValue(default(global::UnityEngine.Transform));
 			optimized.SetValue(default(global::UnityEngine.Transform), default(global::UnityEngine.Vector3));
-		}
-		
-		// UnityEngine.Time.time
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Time_time()
-		{
-			float accessor = global::UnityEngine.Time.time;
-			global::Unity.VisualScripting.StaticPropertyAccessor<float> optimized = new global::Unity.VisualScripting.StaticPropertyAccessor<float>(default(global::System.Reflection.PropertyInfo));
-			optimized.GetValue(null);
 		}
 		
 		// UnityEngine.GameObject.CompareTag
@@ -14189,17 +14195,6 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.SetValue(default(global::UnityEngine.Renderer), default(global::UnityEngine.Material));
 		}
 		
-		// UnityEngine.Color..ctor
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Color_ctor()
-		{
-			float arg0 = default(float);
-			float arg1 = default(float);
-			float arg2 = default(float);
-			float arg3 = default(float);
-			new UnityEngine.Color(arg0, arg1, arg2, arg3);
-		}
-		
 		// UnityEngine.Color.a
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void UnityEngine_Color_a()
@@ -14207,6 +14202,18 @@ namespace Unity.VisualScripting.Generated.Aot
 			global::UnityEngine.Color target = default(global::UnityEngine.Color);
 			float accessor = target.a;
 			target.a = default(float);
+			global::Unity.VisualScripting.ReflectionFieldAccessor optimized = new global::Unity.VisualScripting.ReflectionFieldAccessor(default(global::System.Reflection.FieldInfo));
+			optimized.GetValue(default(global::UnityEngine.Color));
+			optimized.SetValue(default(global::UnityEngine.Color), default(float));
+		}
+		
+		// UnityEngine.Color.b
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Color_b()
+		{
+			global::UnityEngine.Color target = default(global::UnityEngine.Color);
+			float accessor = target.b;
+			target.b = default(float);
 			global::Unity.VisualScripting.ReflectionFieldAccessor optimized = new global::Unity.VisualScripting.ReflectionFieldAccessor(default(global::System.Reflection.FieldInfo));
 			optimized.GetValue(default(global::UnityEngine.Color));
 			optimized.SetValue(default(global::UnityEngine.Color), default(float));
@@ -14236,6 +14243,17 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.SetValue(default(global::UnityEngine.Color), default(float));
 		}
 		
+		// UnityEngine.Color..ctor
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Color_ctor()
+		{
+			float arg0 = default(float);
+			float arg1 = default(float);
+			float arg2 = default(float);
+			float arg3 = default(float);
+			new UnityEngine.Color(arg0, arg1, arg2, arg3);
+		}
+		
 		// UnityEngine.Color.g
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void UnityEngine_Color_g()
@@ -14248,16 +14266,16 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.SetValue(default(global::UnityEngine.Color), default(float));
 		}
 		
-		// UnityEngine.Color.b
+		// UnityEngine.RectTransform.sizeDelta
 		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Color_b()
+		public static void UnityEngine_RectTransform_sizeDelta()
 		{
-			global::UnityEngine.Color target = default(global::UnityEngine.Color);
-			float accessor = target.b;
-			target.b = default(float);
-			global::Unity.VisualScripting.ReflectionFieldAccessor optimized = new global::Unity.VisualScripting.ReflectionFieldAccessor(default(global::System.Reflection.FieldInfo));
-			optimized.GetValue(default(global::UnityEngine.Color));
-			optimized.SetValue(default(global::UnityEngine.Color), default(float));
+			global::UnityEngine.RectTransform target = default(global::UnityEngine.RectTransform);
+			global::UnityEngine.Vector2 accessor = target.sizeDelta;
+			target.sizeDelta = default(global::UnityEngine.Vector2);
+			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.RectTransform, UnityEngine.Vector2> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.RectTransform, UnityEngine.Vector2>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(default(global::UnityEngine.RectTransform));
+			optimized.SetValue(default(global::UnityEngine.RectTransform), default(global::UnityEngine.Vector2));
 		}
 		
 		// UnityEngine.GameObject.SetActive
@@ -14269,6 +14287,54 @@ namespace Unity.VisualScripting.Generated.Aot
 			target.SetActive(arg0);
 			global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.GameObject, bool> optimized = new global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.GameObject, bool>(default(global::System.Reflection.MethodInfo));
 			optimized.Invoke(default(global::UnityEngine.GameObject), arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// TMPro.TextMeshProUGUI.text
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void TMPro_TextMeshProUGUI_text()
+		{
+			global::TMPro.TMP_Text target = default(global::TMPro.TMP_Text);
+			string accessor = target.text;
+			target.text = default(string);
+			global::Unity.VisualScripting.InstancePropertyAccessor<TMPro.TMP_Text, string> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<TMPro.TMP_Text, string>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(default(global::TMPro.TMP_Text));
+			optimized.SetValue(default(global::TMPro.TMP_Text), default(string));
+		}
+		
+		// UnityEngine.UI.Image.color
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_UI_Image_color()
+		{
+			global::UnityEngine.UI.Graphic target = default(global::UnityEngine.UI.Graphic);
+			global::UnityEngine.Color accessor = target.color;
+			target.color = default(global::UnityEngine.Color);
+			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.UI.Graphic, UnityEngine.Color> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.UI.Graphic, UnityEngine.Color>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(default(global::UnityEngine.UI.Graphic));
+			optimized.SetValue(default(global::UnityEngine.UI.Graphic), default(global::UnityEngine.Color));
+		}
+		
+		// UnityEngine.UI.Image.sprite
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_UI_Image_sprite()
+		{
+			global::UnityEngine.UI.Image target = default(global::UnityEngine.UI.Image);
+			global::UnityEngine.Sprite accessor = target.sprite;
+			target.sprite = default(global::UnityEngine.Sprite);
+			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.UI.Image, UnityEngine.Sprite> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.UI.Image, UnityEngine.Sprite>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(default(global::UnityEngine.UI.Image));
+			optimized.SetValue(default(global::UnityEngine.UI.Image), default(global::UnityEngine.Sprite));
+		}
+		
+		// string.Format
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void string_Format()
+		{
+			string arg0 = default(string);
+			object arg1 = default(object);
+			string.Format(arg0, arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<string, object, string> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<string, object, string>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
 			optimized.Invoke(default(object[]));
 		}
 		
@@ -14291,6 +14357,13 @@ namespace Unity.VisualScripting.Generated.Aot
 		public static void UnityEngine_BoxCollider_ctor()
 		{
 			new UnityEngine.BoxCollider();
+		}
+		
+		// TMPro.TextMeshProUGUI..ctor
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void TMPro_TextMeshProUGUI_ctor()
+		{
+			new TMPro.TextMeshProUGUI();
 		}
 	}
 }
